@@ -1,0 +1,26 @@
+{
+	"name": "Flutter",
+	// "dockerFile": "Dockerfile",
+	"dockerComposeFile": ["docker-compose.yml"],
+	// Uncomment the next line if you want to publish any ports.
+	// "appPort": [8080],
+
+	// Uncomment the next line if you want to add in default container specific settings.json values
+	//"settings":  { "workbench.colorTheme": "Quiet Light" },
+	"workspaceFolder": "/workspace",
+	"service": "flutter-web",
+
+	// Uncomment the next line to run commands after the container is created.
+	"postCreateCommand": "cd /workspace && flutter packages pub global activate webdev && flutter packages upgrade",
+
+	// Uncomment the next line to use a non-root user. On Linux, this will prevent
+	// new files getting created as root, but you may need to update the USER_UID
+	// and USER_GID in .devcontainer/Dockerfile to match your user if not 1000.
+	// "runArgs": [ "-u", "vscode" ],
+
+	"extensions": [
+        "dart-code.dart-code",
+        "dart-code.flutter",
+        
+	]
+}
