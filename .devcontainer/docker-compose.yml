@@ -1,12 +1,13 @@
 version: '3'
 services:
   flutter-web:
+    image: antoniopicone/flutter-web:0.4
+    
     ports:
       - 8080:8080
     
-    build:
-      context: .
-      dockerfile: Dockerfile
+    # To avoid running root user, specify user with UID 1000 (wich is devuser or linux default)
+    user: "1000"
 
     volumes:
       # Mounts the project folder to '/workspace'. The target path inside the container
@@ -25,8 +26,6 @@ services:
     # security_opt:
     #   - seccomp:unconfined
 
-    # To avoid running root user, specify user with UID 1000 (wich is devuser or linux default)
-    user: "1000"
-
+    
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
