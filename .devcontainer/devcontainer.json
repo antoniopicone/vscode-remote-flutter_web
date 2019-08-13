@@ -16,7 +16,7 @@
 	// Uncomment the next line to use a non-root user. On Linux, this will prevent
 	// new files getting created as root, but you may need to update the USER_UID
 	// and USER_GID in .devcontainer/Dockerfile to match your user if not 1000.
-	// "runArgs": [ "-u", "vscode" ],
+	"runArgs": [ "-u", "1000" ],
 
 	"extensions": [
         "dart-code.dart-code",
