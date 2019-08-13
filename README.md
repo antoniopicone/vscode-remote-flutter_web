@@ -28,6 +28,6 @@ Some things to try:
    - Open container terminal and, inside /workspace folder, type: `livecode` (it's a bash alias executing `flutter packages pub global run webdev serve --hostname 0.0.0.0 --auto restart`)
    - Open a local browser and go to `http://localhost:8080` and note you can connect to the server in the container.
 
-## TODO
+## Optional ToDo
 
 Add git configuration to work inside container
