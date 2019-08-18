@@ -1,7 +1,7 @@
 version: '3'
 services:
   flutter-web:
-    image: antoniopicone/flutter_web:0.4
+    image: antoniopicone/flutter_web
     
     ports:
       - 8080:8080
