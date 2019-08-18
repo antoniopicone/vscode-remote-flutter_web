@@ -5,7 +5,10 @@
             "name": "Run Flutter WebApp",
             "request": "launch",
             "type": "dart",
-            "args": ["--enable-software-rendering"]
+            "args": ["--enable-software-rendering"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Launch Dev Server"
+            
         }
     ]
 }
